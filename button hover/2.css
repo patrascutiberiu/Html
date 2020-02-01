@@ -1,0 +1,89 @@
+:root {
+    --body: #000;
+    --primary: #111111;
+    --secondary: #6b696b8a;
+    --light: #ffffffcc;
+    --highlight: #4d0a0aa4;
+    --hover: #8b1919;
+}
+
+@font-face {
+    font-family: 'channel-webfont';
+    src: url('fonts/channel-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Just Another Hand', cursive;
+
+}
+
+* {
+    margin: auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    background-color: #000;
+
+}
+
+.navigation {
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+    float: right;
+    font-family: 'channel-webfont';
+
+}
+
+.navigation > ul {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 65px;
+    line-height: 60px;
+    width: 160px;
+
+
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.navigation > ul > li > ul {
+    text-decoration: none;
+    margin: 0;
+    width: 120px;
+    left: -100px;
+    width: 160px;
+    display: none;
+}
+
+.navigation ul li ul li {
+    width: 100%;
+
+
+}
+
+.navigation ul li ul li:first-child {
+    
+}
+
+.navigation a:hover {
+    color: var(--hover);
+    background-color: var(--light);
+    border-radius: 10px;
+    width: 160px;
+}
+
+.navigation ul li:hover ul {
+    display: block;
+}

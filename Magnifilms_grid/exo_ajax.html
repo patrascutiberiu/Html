@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hello, world!</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <h1>Test de traitement AJAX</h1>
+    <label>Entrer votre nom</label>
+    <input type="text" id="nom"><br>
+    <input type="button" id="valider" value="Valider"><br> <br>
+    <p>Hello</p>
+
+    <ul id="maliste">
+        <li>mon premier item</li>
+    </ul>
+    
+    <script>
+        $.getJSON("ajax/test.json", function (data) {
+            var items = [];
+            $.each(data, function (key, val) {
+                items.push("<li id='" + key + "'>" + val + "</li>");
+            });
+
+            $("<ol>", {
+                "id": "my-new-list",
+                html: items.join("")
+            }).appendTo("body");
+            $("li").add("<p id='new'>new paragraph</p>")
+                .css("background-color", "red");
+            $("ol").add("<li>nouvel item</li>").appendTo("#my-new-list");
+        });
+
+        $("ul").add("<li>").appendTo("#maliste");
+
+
+        $("p").clone().add("<span>Again</span>").appendTo(document.body);
+
+        $("#valider").bind("click", function () {
+            var valnom = $("#nom").val();
+
+            $.ajax({
+                url: "action.php",
+                data: {
+                    nom: valnom
+                },
+                complete: function (xhr, textStatus) {
+                    if (textStatus != "success") return;
+                    $("body").append("<p>Le nom saisie est :" + xhr.responseText + "</p>");
+                }
+
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,611 @@
+:root {
+    --body_bg: #7c79797e;
+    --black:#000;
+    --light: #ffffffcc;
+    --highlight: #ffffff98;
+    --border:#ffffff;
+    --hover: #8b1919;
+}
+
+@font-face {
+    font-family: 'channel-webfont';
+    src: url('fonts/channel-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Just Another Hand', cursive;
+
+}
+
+* {
+    margin: auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+        "a a a"
+        "b c d"
+        "b c d"
+        "b c d"
+        "b j d"
+    ;
+    grid-template-columns: 1fr 900px 1fr;
+    grid-template-rows: 60px 3fr 1fr;
+    background-image: url(img/bg_motif.gif);
+
+}
+
+header {
+    grid-area: a;
+    display: grid;
+    grid-template-areas: "lo na";
+    grid-template-columns: 60px 2fr;
+    height: 60px;
+    width: 100%;
+    background-color: var(--primary);
+    border-bottom: 1px solid var(--border);
+
+}
+
+header img {
+    grid-area: lo;
+    margin-top: 45px;
+    margin-left: 200px;
+
+}
+.navigation{
+    grid-area: na;
+    font-size: 15px;
+    margin-top: 0px;
+    margin-right:50px;
+    font-family: 'channel-webfont';
+    
+}
+.navigation >ul{
+    list-style-type: none;
+    line-height: 60px;
+}
+.navigation >ul >li{
+    display: inline-block;
+    margin-left: 50px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.navigation>ul li a{
+    text-decoration: none;
+    color: var(--border);
+}
+.navigation a:hover {
+    color: var(--hover);
+}
+.navigation li:hover {
+    background-color: var(--highlight);
+
+}
+.navigation >ul ul{
+    list-style-type: none;
+    position: absolute;
+    display: none;
+    margin-left: 30px;
+}
+.navigation ul li:hover ul {
+    display: block;
+    background-color: #00000065;
+
+}
+.navigation >ul ul li{
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+/* .navigation ul li:hover {
+    background-color: #52525256;
+} */
+
+/* .navigation a:active {
+	color: rgb(9, 255, 0);
+
+}
+.navigation a:visited {
+	color: rgb(187, 255, 0);
+}  */
+
+#container {
+    grid-area: c;
+    display: grid;
+    grid-template-areas:
+        "e"
+        "f"
+        "g"
+    ;
+    grid-template-rows: 500px 1fr 1fr;
+    background-image: url(img/container2.png);
+}
+
+#part_1 {
+    grid-area: e;
+    border-bottom: 1px solid var(--light);
+    margin-top: 15px;
+    box-shadow: 0px 0px 5px 5px #f8f8f854;
+    margin-bottom: 15px;
+}
+
+#part_1 img {
+    width: 815px;
+    max-width: auto;
+}
+
+h1 {
+    text-align: center;
+    color: var(--hover);
+    background-color: var(--light);
+}
+
+#part_2 {
+    grid-area: f;
+    display: grid;
+    grid-template-areas:
+        "l cn r";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 430px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    margin-top: 5px;
+    margin-bottom: 1px;
+}
+
+h2 {
+    color: var(--light);
+    text-align: center;
+    line-height: 70px;
+    font-size: 15px;
+    font-family: 'channel-webfont';
+    margin-top: 20px;
+}
+
+.left {
+    grid-area: l;
+    background-image: url(img/bg_g.png);
+    background-size: 300px 200px;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    font-size: 10px;
+
+}
+
+.left p {
+    font-family: 'Just Another Hand', cursive;
+    font-size: 35px;
+    text-align: center;
+    color: var(--black);
+}
+
+.left img {
+    position: absolute;
+    margin-left: 25px;
+}
+
+.centre {
+    grid-area: cn;
+    background-image: url(img/bg_g.png);
+    background-size: 300px 200px;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    font-size: 10px;
+
+}
+
+.centre p {
+    font-family: 'Just Another Hand', cursive;
+    font-size: 35px;
+    text-align: center;
+    color: var(--black);
+}
+
+.centre img {
+    position: absolute;
+    margin-left: 25px;
+}
+
+.right {
+    grid-area: r;
+    background-image: url(img/bg_g.png);
+    background-size: 300px 200px;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+.right p {
+    font-family: 'Just Another Hand', cursive;
+    text-align: center;
+    font-size: 35px;
+    color: var(--black);
+}
+
+.right img {
+    position: absolute;
+    margin-left: 25px;
+}
+
+button {
+    font-size: 25px;
+    background-image: url(img/lire.png);
+    background-position-y: -135px;
+    color: var(--border);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 0%;
+    height: 45px;
+    width: 150px;
+
+}
+
+button:hover {
+    color: var(--hover);
+    transform: rotate(-10deg);
+    background-position-y: -95px;
+}
+
+
+#part_3 {
+    grid-area: g;
+    display: grid;
+    grid-template-areas:
+        "h i";
+    grid-template-columns: 270px 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 0px;
+}
+
+.selection {
+    grid-area: h;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    background-color: var(--body_bg);
+    width: 250px;
+    height: 370px;
+}
+
+.selection h3 {
+    padding: 10px;
+    font-size: 20px;
+    color: var(--light);
+    font-family: 'channel-webfont';
+    text-align: center;
+}
+
+.selection>ul {
+    list-style-type: none;
+    border-top: 1px solid var(--light);
+    border-bottom: 1px solid var(--light);
+    padding-left: 10px;
+    font-family: 'Just Another Hand', cursive;
+    font-size: 35px;
+    text-align: left;
+}
+
+.selection li {
+    margin-left: 45px;
+}
+
+.selection a {
+    /* color: var(--light); */
+    color: var(--black);;
+    text-decoration: none;
+    margin-left: 25px;
+
+}
+
+.selection a:hover {
+    color: var(--hover);
+}
+
+
+#cadeaux {
+    grid-area: i;
+    display: grid;
+    grid-template-areas:
+        "main main"
+        "nav f"
+    ;
+    background-color: var(--body_bg);
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: 45px;
+    margin-top: 20px;
+    margin-right: 10px;
+    height: 370px;
+
+}
+
+
+#cadeaux img {
+    grid-area: nav;
+    border: 4px solid var(--light);
+    box-shadow: 0px 0px 5px 5px #f8f8f854;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 55px;
+}
+
+#cadeaux>h3 {
+    grid-area: main;
+    margin: 10px;
+    font-size: 20px;
+    color: var(--light);
+    font-family: 'channel-webfont';
+    text-align: center;
+
+}
+
+#cadeaux>h4 {
+    grid-area: f;
+    margin-top: 40px;
+    margin-left: 1px;
+    font-family: 'channel-webfont';
+    font-size: 13px;
+    color: var(--light);
+}
+
+#cadeaux>p {
+    grid-area: f;
+    text-align: left;
+    font-family: 'Just Another Hand', cursive;
+    font-size: 35px;
+    margin-top: 75px;
+
+}
+
+#cadeaux>button {
+    grid-area: f;
+    margin-left: 35%;
+    display: block;
+    margin-top: 65%;
+    margin-bottom: 0%;
+}
+
+
+footer {
+    grid-area: j;
+    display: grid;
+    grid-template-areas:
+        "ab bc"
+    ;
+    font-size: 15px;
+    font-family: 'channel-webfont';
+    background-image: url(img/footer-bg.jpg);
+    background-size: auto 180px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 150px;
+    width: 100%;
+    border-top: 1px solid var(--light);
+}
+
+#navigation2 {
+    grid-area: ab;
+    margin-top: 90px;
+
+}
+
+#navigation2>ul li{
+    list-style-type: none;
+    display: inline-block;
+
+}
+
+#navigation2 a {
+    color: var(--light);
+    text-decoration: none;
+
+}
+
+#navigation2 a:hover {
+    color: var(--hover);
+}
+
+footer img {
+    grid-area: bc;
+    margin-top: 43px;
+}
+
+
+@media screen and (max-width:1200px) {
+    header img {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    header img {
+        display: none;
+    }
+    .navigation{
+        margin: auto;
+        margin-left: 10px;
+    }
+    .navigation >ul >li{
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header img {
+        display: none;
+    }
+}
+
+@media screen and (max-width:576px) {
+    body {
+        grid-template-areas: "a""c""c""j";
+        grid-template-rows: 60px 2fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    header img {
+        display: none;
+    }
+
+    .navigation {
+        margin-left: 0px;
+    }
+
+    .navigation ul {
+        margin-left: 0px;
+        margin-top: 5px;
+
+    }
+    .navigation >ul >li{
+        margin-left: 30px;
+    }
+
+    #container {
+        grid-template-areas:
+            "e"
+            "f"
+            "g"
+        ;
+        grid-template-rows: 480px 1fr 1fr;
+        max-height: 2300px;
+    }
+
+    #part_1 {
+        margin-top: 15px;
+        margin-bottom: 0px;
+        box-shadow: none;
+        border: none;
+    }
+
+    #part_1 img {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    h1 {
+        font-size: 30px;
+
+    }
+
+    #part_2 {
+        grid-template-areas:
+            "l"" cn"" r";
+        grid-template-columns: 1fr;
+        grid-template-rows: 390px 1fr 390px;
+        ;
+        padding-bottom: 10px;
+
+    }
+
+    h2 {
+        margin-top: 0px;
+        font-size: 25px;
+    }
+
+    .left {
+        background-size: 720px 300px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .centre {
+        background-size: 720px 300px;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 25px;
+    }
+
+    .right {
+        background-size: 720px 300px;
+        padding-bottom: 25px;
+    }
+
+    .left p {
+        font-size: 55px;
+        padding: 10px;
+    }
+
+    .centre p {
+        font-size: 55px;
+        padding: 10px;
+    }
+
+    .right p {
+        font-size: 55px;
+        padding: 10px;
+    }
+
+    .left img {
+        height: 80px;
+
+    }
+
+    .centre img {
+        height: 80px;
+
+    }
+
+    .right img {
+        height: 80px;
+
+    }
+
+    button {
+        margin-top: 10px;
+    }
+
+    #part_3 {
+        grid-template-areas: "h";
+        grid-template-rows: 250px;
+        margin-left: 200px;
+
+    }
+
+    .selection {
+        width: 400px;
+        height: 590px;
+
+    }
+
+    .selection h3 {
+        font-size: 30px;
+        margin-top: 5px;
+    }
+
+    .selection a {
+        font-size: 55px;
+        margin-left: 65px;
+    }
+
+    #cadeaux {
+        display: none;
+    }
+
+    footer {
+        grid-template-areas: "ab";
+        grid-template-columns: 1fr;
+    }
+
+    footer img {
+        display: none;
+    }
+
+    #navigation2 {
+        margin-top: 60px;
+        font-size: 20px;
+    }
+
+    #navigation2 a {
+        padding-right: 20px;
+    }
+
+}

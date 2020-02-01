@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+body {
+    width: 100%;
+    min-height: 500px;
+    background-color: linear-gradient(to right , #0f0f0fbd, #5353537e);
+    background-image: url('foto/catelubbb.jpg');
+    background-size: 1700px 1000px;
+
+    display: grid;
+    grid-template-areas: 
+    "a d"
+    "b c"
+    "e e"
+    "f f"
+    "g g"
+    ;
+    grid-template-columns: 500px 1fr;
+    grid-template-rows: 200px 700px 1fr 250px 100px;
+
+}
+
+header {
+    grid-area: a;
+    margin: auto;
+    padding: auto;
+    width: 1200px;
+
+}
+
+header h1 {
+    color: #fff;
+    font-family: 'Akronim', cursive;
+    font-size: 150px;
+    margin-left: 350px;
+}
+.media{
+    grid-area: d;
+}
+.media li{
+    font-size: 25px;
+    margin-top: 0px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 800px;
+
+
+}
+.media li a{
+    color: #fff;    padding: 0px;
+    margin-left: 40px;
+}
+.media li a:hover{
+    background: linear-gradient(to left, #ff8800ca, #96144aab);
+}
+
+.container {
+    grid-area: b;
+    width: 400px;
+    height: 630px;
+    margin-top: 0;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(90deg , #0f0f0fbd, #5353537e);
+    padding-left: 45px;
+    border-radius: 8px;
+}
+
+/*partie button*/
+.menu {
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    top: 80px;
+    margin-left: 30px;
+    position: relative;
+}
+
+.menu a {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 30px;
+}
+
+.item {
+    overflow: hidden;
+    position: relative;
+
+}
+
+.btn {
+    display: block;
+    padding: 16px 20px;
+    background: linear-gradient(to right, #ff8800ab, #96144a8e);
+    color: white;
+    position: relative;
+}
+
+
+.btn i {
+    margin-right: 10px;
+}
+
+.smenu {
+    background: #2a2a2a7e;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    max-height: 0;
+}
+
+.smenu a {
+    display: block;
+    padding: 16px 26px;
+    color: white;
+    font-size: 20px;
+    margin: 4px 0;
+    position: relative;
+}
+
+.smenu a:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #ff8800d8;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.smenu a:hover:before {
+    opacity: 1;
+}
+
+.item:target .smenu {
+    max-height: 10em;
+}
+
+/*partie foto*/
+.foto {
+    grid-area: c;
+    margin-left: 200px;
+    margin-top: 50px;
+    cursor: pointer;
+    /* background: linear-gradient(to top , #0f0f0fd8, #5353539a);
+    border-radius: 8px;
+    width: 700px;
+    height: 500px; */
+}
+
+.front,
+.back {
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+}
+
+.front img {
+    height: 450px;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.back img {
+    height: 450px;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.front {
+    transform: perspective(900px) rotateY(0deg);
+}
+
+.back {
+    transform: perspective(900px) rotateY(180deg);
+}
+
+
+.foto:hover>.front {
+    transform: perspective(900px) rotateY(-180deg);
+}
+
+.foto:hover>.back {
+    transform: perspective(900px) rotateY(0deg);
+}
+.description{
+    grid-area: e;
+    width: 1400px;
+    padding: auto;
+    margin: auto;
+}
+.description p{
+    color: #fff;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
+.description h2{
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 25px;
+
+}
+.description h3{
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+.fotoFormatie{
+    grid-area: f;
+    padding: auto;
+    margin: auto;
+    width: 1000px;
+}
+.fotoFormatie img{
+    width: 160px;
+    margin-top: 70px;
+    padding-left: 30PX;
+}
+.fotoFormatie a{
+    color: #fff;
+    position: absolute;
+    display: inline;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    margin-left: 40px;
+    padding-top: 30px;
+}
+footer{
+    grid-area: g;
+    background-color: rgba(0, 0, 0, 0.699);
+    height: 80px;
+    width: 100%;
+    margin-top: 20px;
+
+}
+footer p{
+    color: #fff;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    line-height: 80px;
+
+
+}

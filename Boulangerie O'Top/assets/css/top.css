@@ -1,0 +1,173 @@
+:root {
+    --body: #333333;
+    --primary: #111111;
+    --secondary: #9d0d0f;
+    --highlight: #EEEE00;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Dancing Script', cursive;
+    margin: auto;
+    padding: 0px;
+    max-width: 992px;
+    display: grid;
+    /*
+    grid-template-areas:
+        ' a a a a'
+        ' b c c c'
+        ' b d d d';
+*/
+    grid-template-areas: "a a""b c""b d";
+    grid-template-rows: 150px 1fr 500px;
+    grid-template-columns: 700px 300px;
+    background-image: url(../img/BOULANGERIE-1920..jpg);
+    background-size: cover;
+}
+
+header {
+    height: 150px;
+    grid-area: a;
+
+}
+
+header img {
+    float: right;
+    height: 150px;
+    margin-right: 25px;
+}
+
+button {
+    font-family: 'Dancing Script', cursive;
+    background-color: #432d1bde;
+    display: inline-block;
+    height: 60px;
+    width: 210px;
+    margin-top: 45px;
+    margin-left: 15px;
+    border: 2px solid #5E616A;
+    font-size: 25px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: 0.6s;
+    overflow: hidden;
+    color: #fff;
+}
+
+button:hover {
+    background: #E6BF8E;
+    cursor: pointer;
+    font-weight: bold;
+    color: #432D1B;
+}
+
+main {
+    grid-area: b;
+    padding: 20px;
+    height: auto;
+}
+
+h2 {
+    margin-top: 33px;
+    margin-bottom: 80px;
+    padding: 20px;
+    font-size: 35px;
+    text-align: center;
+    color: #E6BF8E;
+    background: #432D1B;
+}
+
+p {
+    background-color: #e4ccaeb2;
+    padding: 20px;
+}
+
+.para {
+    text-align: justify;
+    font-size: 25px;
+    background-color: #e6be8ec7;
+    color: #422D1C;
+    padding: 32px;
+    margin-top: 25px;
+    border: 2px solid #422D1C;
+    border-bottom-right-radius: 55px;
+    border-top-left-radius: 55px;
+    border-top-right-radius: 55px;
+    border-bottom-left-radius: 55px;
+}
+
+aside {
+    grid-area: c;
+    background: #e6be8ec7;
+    border: 2px solid #422D1C;
+    border-bottom-right-radius: 75px;
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+    border-bottom-left-radius: 75px;
+    height: auto;
+    margin-left: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+p a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact {
+    margin-top: 5px;
+    margin-right: 25px;
+    background-color: #e6be8ec7;
+    color: #422D1C;
+    font-size: 27px;
+    text-align: center;
+    line-height: 60px;
+    padding-top: 45px;
+    border: 2px solid #422D1C;
+    border-bottom-right-radius: 75px;
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+    border-bottom-left-radius: 75px;
+    width: 300px;
+    height: 500px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #432D1B;
+
+}
+
+.contactfond {
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    width: 250px;
+    height: 420px;
+    margin-left: 24px;
+    margin-top: 30px;
+    list-style: none;
+}
+
+.nom {
+    font-weight: bold;
+    background: #432d1b;
+    font-weight: bold;
+}
+
+.nom a {
+    color: #E6BF8E;
+}
+
+footer {
+    grid-area: d;
+    margin-left: 5px;
+}

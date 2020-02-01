@@ -1,0 +1,122 @@
+* {
+  margin: auto;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(hero.jpg);
+  display: grid;
+  grid-template-areas: "a b c";
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.img {
+  width: 200px;
+  height: 300px;
+  display: inline-block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 2s;
+  margin-left: 25%;
+  margin-top: 10%;
+  padding: 0px;
+}
+
+.img:hover {
+  background-position: bottom center;
+}
+
+.img1 {
+  grid-area: a;
+  background-image: url(CP_gigondas.png);
+}
+
+.img2 {
+  grid-area: b;
+  background-image: url(CP_chateauneuf_du_pape_rouge.png);
+}
+
+.img3 {
+  grid-area: c;
+  background-image: url(CP_vacqueyras.png);
+}
+
+.vin1 h2 {
+  color: #c89253;
+  font-family: "Great Vibes";
+  font-size: 35px;
+  text-align: center;
+}
+
+.vin1 p {
+  font-family: "Smythe";
+  color: #fff;
+  font-size: 20px;
+  width: 500px;
+  height: auto;
+  text-align: center;
+}
+
+.vin2 h2 {
+  color: #c89253;
+  font-family: "Great Vibes";
+  font-size: 35px;
+  text-align: center;
+}
+
+
+.vin2 p {
+  font-family: "Smythe";
+  color: #fff;
+  font-size: 20px;
+  width: 500px;
+  height: auto;
+  text-align: center;
+
+}
+
+
+.vin3 h2 {
+  color: #c89253;
+  font-family: "Great Vibes";
+  font-size: 35px;
+  text-align: center;
+}
+
+
+.vin3 p {
+  font-family: "Smythe";
+  color: #fff;
+  font-size: 20px;
+  width: 500px;
+  height: auto;
+  text-align: center;
+
+}
+
+/* * {
+  margin: auto;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  background-image: url(hero.jpg);
+  grid-template-areas: "a b c";
+  grid-template-columns: 1fr 1fr 1fr;
+}
+img{
+  width: 150px;
+  height: 300px;
+  display: inline-block;
+  margin: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 2s;
+}
+img:hover{
+  background-position: bottom center;
+} */

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Formatia Catelu</title>
+  <link href="https://fonts.googleapis.com/css?family=Smythe" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+</head>
+<style>
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(foto/c11.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .titlu {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Smythe";
+    color: #c89253;
+    font-size: 68px;
+    z-index: 1;
+  }
+
+  .citat {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Great Vibes";
+    color: #fff;
+    font-size: 35px;
+    z-index: 1;
+  }
+
+  .deschide {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  button {
+    background: none;
+    padding: 20px 48px;
+    color: #c89253;
+    border: 1px solid #c89253;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+
+  button:focus {
+    outline: none;
+    border: none;
+  }
+
+  button:hover {
+    background: #c89253;
+    color: #110b07;
+  }
+</style>
+
+<body>
+  <section class="container">
+    <article class="titlu">
+      Bine ati venit pe pagina Formatiei Catelu
+    </article>
+    <article class="citat">
+      " Singurul mod de a realiza lucruri minunate e sa iubesti ceea ce faci ! "
+    </article>
+    <article class="deschide">
+      <button onclick="window.location.href='ma_page.html'">Deschide aici !</button>
+    </article>
+  </section>
+
+  <script type="text/javascript">
+    TweenMax.from(".titlu", 3, {
+      opacity: 0,
+      delay: 1.4
+    });
+    TweenMax.from(".citat", 3, {
+      opacity: 0,
+      delay: 1.8
+    });
+    TweenMax.from(".deschide", 0.5, {
+      opacity: 0,
+      y: 4,
+      delay: 2
+    });
+  </script>
+</body>
+
+</html>

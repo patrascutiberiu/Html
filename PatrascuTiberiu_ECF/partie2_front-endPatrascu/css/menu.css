@@ -1,0 +1,378 @@
+body{
+	background-image: url(../images/bg.gif);
+	background-color: #F9F9FA;
+	background-repeat: repeat-x;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	
+	
+}
+div#menu{
+    width:118px;
+    position: absolute;
+}
+div#menu ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    
+}
+div#menu ul li{
+    position:relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width:118px;
+}
+div#menu ul li a#b{
+    display:block;
+    width: 118px;
+    height: 52px;
+    background-image:  url(../button.png);
+    background-repeat: no-repeat;
+}
+div#menu ul li a#b:hover{
+    display:block;
+    width: 118px;
+    height: 52px;
+    background-image:  url(../public_hover.png);
+    background-repeat: no-repeat;
+}
+div#menu ul li a#c:hover{
+    display:block;
+    width: 118px;
+    height: 52px;
+    background-image:  url(../prive_hover.png);
+    background-repeat: no-repeat;
+}
+div#menu ul li a#d:hover{
+    display:block;
+    width: 118px;
+    height: 52px;
+    background-image:  url(../asso_hover.png);
+    background-repeat: no-repeat;
+}
+div#menu ul li a#c{
+    display:block;
+    width: 118px;
+    height: 52px;
+    background-image:  url(../button_prive.png);
+    background-repeat: no-repeat;
+}
+div#menu ul li a#d{
+    display:block;
+    width: 118px;
+    height: 52px;
+    background-image:  url(../button_asso.png);
+    background-repeat: no-repeat;
+}
+div#menu ul li ul{
+    
+
+}
+div#menu ul ul li{
+    text-align: center;
+    vertical-align: middle;
+    height: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../button.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div#header{
+   /* background-image: url(header.png);*/
+    background-repeat: no-repeat;
+    height: 200px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #333333;
+}
+div#principal{
+  position: relative;
+  border-left: 1px solid #333333;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  margin-right: auto;
+  margin-left: auto;
+  width: 980px;
+}
+div#contenu{
+    background-position: top;
+    border-left: 1px solid #333333;
+    background-repeat: no-repeat;
+    display:inline-block;
+    margin-left: 170px;
+    padding-left:200px;
+	height:400px;
+	padding-top: 50px;
+ 	width:100%;
+	
+	
+}
+/* a en display block et dimension du bouton. Avec hover changer l'apparence du li   */
+div#header ul#menu_ho{
+    list-style-type: none;
+    text-align: center;
+    vertical-align: middle;
+    position : absolute;
+    top: 115px;
+    margin-left: 100px;
+}
+
+div#header ul li{
+    display:block;
+    margin-left: 2px;
+    float: left;
+    background-image: url(../button_menu_ho.png);
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 132px;
+}
+div#header ul li a:visited, div#header ul li a:link{
+    text-align: center;
+    color:white;
+    text-decoration: none;
+    margin-top:25px;
+    display:block;
+    float: left;
+    height: 50px;
+    width: 132px;
+}
+div#header ul li:hover{
+    background-image: url(../button_menu_ho.png);
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 132px;
+}
+div#header ul li a{
+      
+}
+#logo{
+  margin-left: 600px;
+  margin-top: -50px;
+}
+div#menu2{
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    padding-left: 3px;
+    color: #FFF;
+   /* background-image: url(menu_gauche.png); */
+    margin-top:10px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #333333;
+    background-repeat: no-repeat;
+    padding-top:0px;
+    width: 162px;
+	
+}
+div#menu2 ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+div#menu2 ul li{
+    cursor: pointer;
+    position:relative;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    width:160px;
+	
+}
+div#menu2 ul li a#b{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    display:block;
+    text-align: center;
+    width: 160px;
+    height: 32px;
+    background-image:  url(../images/mneu_ve2.gif);
+    background-repeat: no-repeat;
+}
+div#menu2 ul li a#b:hover{
+    display:block;
+    text-align: center;
+    width: 160px;
+    height: 32px;
+    background-image:  url(../images/mneu_ve2_ho.gif);
+    background-repeat: no-repeat;
+}
+div#menu2 ul li a#c:hover{
+	 font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    display:block;
+    text-align: center;
+    width: 160px;
+    height: 32px;
+    background-image:  url(../images/mneu_ve2_b_ho.gif);
+    background-repeat: no-repeat;
+}
+div#menu2 ul li a#d:hover{
+    display:block;
+    text-align: center;
+    width: 160px;
+    height: 32px;
+    background-image:  url(../images/mneu_ve2_c_ho.gif);
+    background-repeat: no-repeat;
+}
+div#menu2 ul li a span{
+    display:block;
+    padding-top: 8px;
+    padding-right: 5px;
+    width: 160px;
+    height:52px;
+}
+div#menu2 ul li a#c{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    display:block;
+    text-align: center;
+    width: 160px;
+    height: 32px;
+    background-image:  url(../images/mneu_ve2_b.gif);
+    background-repeat: no-repeat;
+}
+div#menu2 ul li a#d{
+     font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    display:block;
+    text-align: center;
+    width: 160px;
+    height: 32px;
+    background-image:  url(../images/mneu_ve2_c.gif);
+    background-repeat: no-repeat;
+}
+div#menu2 ul li ul li{
+    color: #333333;
+    text-align: center;
+    vertical-align: middle;
+    height: 22px;
+    padding-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    
+}
+div#menu2 ul li ul{
+    width: 147px;
+    margin-bottom: 5px;
+    background-color: #F2F2F2;
+    -webkit-border-top-right-radius: 15px;
+    -moz-border-radius-topright: 15px;
+    -khtml-border-radius-topright: 15px;
+}
+#dolphincontainer{position:relative;display: inline-block;height:56px;color:#E0E0E0;background-repeat: repeat-x;background-color: transparent;background-image:url(../images/doplhin_bck.png);background-position: bottom;width:100%;font-family:Helvetica,Arial,Verdana,sans-serif;}
+#dolphinnav{position:relative;height:33px;font-size:12px;text-transform:uppercase;font-weight:bold;background:transparent  url(../images/dolphin_bg.gif) repeat-x bottom left;padding:0 0 0 20px;}
+#dolphinnav ul{margin:0;padding:0;list-style-type:none;width:auto;float:left;}
+#dolphinnav ul li{display:block;float:left;margin:0 1px;padding-left: 25px;}
+#dolphinnav ul li a{display:block;float:left;color:#EAF3F8;text-decoration:none;padding:0 0 0 20px;height:33px;}
+#dolphinnav ul li a span{padding:12px 20px 0 0;height:21px;float:left;}
+#dolphinnav ul li a:hover{color:#fff;background:transparent  url(../images/dolphin_bg-OVER.gif) repeat-x bottom left;}
+#dolphinnav ul li a:hover span{display:block;width:auto;cursor:pointer;}
+#dolphinnav ul li a.current,#dolphinnav ul li a.current:hover{color:#fff;background:#1D6893 url(../images/dolphin_left-ON.gif) no-repeat top left;line-height:275%;}
+#dolphinnav ul li a.current span{display:block;padding:0 20px 0 0;width:auto;background:#1D6893 url(../images/dolphin_right-ON.gif) no-repeat top right;height:33px;}
+
+div#search{
+    margin-left: 650px;
+    padding-top: 7px;
+    color: white;   
+}
+div#banner{
+    position: relative;
+    width : 100%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+#head{
+   padding-bottom: -50px;
+   position: absolute;
+   margin-top: 50px;
+}
+
+.navigation{ font-family: Helvetica, sans-serif; font-size:8px ; text-decoration:none; font-weight:bold; text-transform: uppercase; }
+
+#footer{
+	border-top: 1px solid #333333;
+	height:25px;
+	background-image:url(../images/doplhin_bck.png);
+	background-color: transparent;
+	background-repeat:repeat-x;
+}
+
+.specialbas {
+	padding-top:5px;
+	text-align:center;
+	
+	}
+.specialbas a:link {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight:bold;
+	color: #4A6333;
+	text-decoration: underline;
+	
+	
+}
+.specialbas a:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight:bold;
+	color: #4A6333;
+	text-decoration: none;
+	
+	
+}
+.specialbas a:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight:bold;
+	color: #4A6333;
+	text-decoration: underline;
+
+}
+.specialbas a:active {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight:bold;
+	color: #4A6333;
+	
+}
+.assurancecorps {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #5d595a;
+	display: block;
+
+
+}
+.Bouton {
+   font-family : Arial, Helvetica, sans-serif;
+	color : #ffffff;	
+	font-size :12px;
+	text-align: center;
+	cursor: pointer;
+	border : 1px solid #ffffff;
+	height : 18px;
+	background-color: #E3A246;
+	margin-right: 4px;
+	margin-left: 4px;
+}
+.feed-button a {
+  color: #444;
+  padding: 5px 10px 5px 30px;
+  background: #ccc url("../images/feed-icon-14x14.png") no-repeat 15px 50%;
+  border-top: 1px solid #e2e2e2;
+  border-right: 1px solid #818181;
+  border-bottom: 1px solid #565656;
+  border-left: 1px solid #d7d7d7;
+}
+.feed-button a:hover {
+  color: #444;
+  background: #fff url("../images/feed-icon-14x14.png") no-repeat 15px 50%;
+  border-top: 1px solid #f5f5f5;
+  border-right: 1px solid #969696;
+  border-bottom: 1px solid #646464;
+  border-left: 1px solid #f2f2f2;
+} 
+

@@ -1,0 +1,188 @@
+﻿<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Suivi Stagiaire Partie 2</title>
+  <link rel="stylesheet" type="text/css" href="css/menu.css">
+  <style type="text/css">
+    #apDiv1 {
+      position: absolute;
+      width: 200px;
+      height: 51px;
+      z-index: 1;
+      left: 777px;
+      top: 79px;
+    }
+
+    label {
+      display: inline-block;
+      margin-right: 10px;
+      width: 100px;
+    }
+
+    input {
+      margin: 5px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="principal">
+    <div id="banner"><img src="images/header1.png" alt="" width="980" height="213" id="head" />
+      <div id="apDiv1">
+      </div>
+    </div>
+    <div id="dolphincontainer">
+      <div id="dolphinnav">
+        <ul>
+          <li><a class="current" href="#" title=""><span><img src="images/home_w.png" alt="" /></span></a></li>
+          <li><a href="#"><span>Nos methodes</span></a></li>
+          <li><a href="#"><span>Notre catalogue</span></a></li>
+          <li><a href="#" title="css website navigation menus"><span>Nous contacter</span></a></li>
+          <div id="search">Recherche&nbsp;&nbsp;<input type="text" /><input type="button" value="Ok" /></div>
+        </ul>
+
+      </div>
+    </div>
+    <div id="menu2">
+      <ul class="navigation">
+        <li onMouseOver="" onMouseOut=""><a id="b"><span>OPCA</span></a>
+          <ul id="sousmenu1" style="display:none;border-left:8px solid #A0B842; text-align:left ">
+            <li>Financement</li>
+            <li>Inscription</li>
+          </ul>
+        </li>
+        <li><a id="c"><span>DIF et CIF</span></a>
+          <ul id="sousmenu2" style="display:none;border-left:8px solid #99CCCC; text-align:left;">
+            <li>Accès DIF</li>
+            <li>Accès CIF HTT</li>
+          </ul>
+        </li>
+        <li><a id="d"><span>Offre d emploi</span></a>
+          <ul id="sousmenu3" style="display:none;border-left:8px solid #FF9933; text-align:left;">
+            <li>Administratif</li>
+            <li>Enseignant</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="assurancecorps">
+        <fieldset class="fieldset">
+          <legend>Administration :</legend>
+          <label for="identifiant">Identifiant</label>
+          <input type="text" name="identifiant" id="identifiant" placeholder="Votre identifiant..." required>
+          <label for="password">Mot de passe</label>
+          <input type="password" name="password" id="password" placeholder="Votre mot de passe..." required>
+          <button type="submit">Valider</button>
+        </fieldset>
+
+        <a href="RSS/rss-atom.xml" style="display:block; text-align:center"> <img src="images/feed-icon-14x14.png"
+            width="14" height="14"></a>
+      </div>
+
+    </div>
+
+    <div id="contenu">
+      <div id="saisie">
+        <form id="form1">
+          <div>
+            <label id="mess">pour nous contactez sans attendre, veuillez renseigner le formulaire suivant </label><br>
+            <label id="mess2">les champs précédés du signe * sont obligatoires :</label>
+          </div>
+
+        </form>
+      </div>
+      <div class="parent">
+        <div class="enfant">
+          <form id="form2" method="GET" action="traitement.php">
+            <label for="civilite">Civilité :</label>
+            <select name="choix" id="civilite">
+                <option selected>Civilité</option>
+              <option value="choix1">Mr</option>
+              <option value="choix2">Mme</option>
+              <option value="choix3">Mlle</option>
+            </select><br />
+            <label for="nom">Nom *:</label>
+            <input type="text" name="nom" id="nom"><br>
+            <label for="prenom">Prenom :</label>
+            <input type="text" name="prenom" id="prenom"><br>
+            <label for="adresse">Adresse</label>
+            <input type="text" name="adresse" id="adresse"><br>
+            <label for="phone">Téléphone *:</label>
+            <input type="text" name="phone" id="phone"><br>
+            <label for="email">e-mail *:</label>
+            <input type="email" name="email" id="email"><br>
+            <label for="obj">objet de votre message :</label>
+            <input type="text" name="obj" id="obj"><br>
+            <label for="msg">Votre message</label>
+            <textarea name="" id="" cols="50" rows="5"></textarea><br>
+            <input name="validation" type="submit" id="validation" value="Validation" disabled="disabled" /> </form>
+        </div>
+      </div>
+    </div>
+    <div id="message"></div>
+
+
+    <div id="footer">
+      <div class="specialbas"><a href="#" target="_self">Contact</a> &nbsp;|&nbsp; <a href="#" target="_self">Qui somme
+          nous?</a>&nbsp;|&nbsp; <a href="#" target="_self">Mentions
+          legales</a>&nbsp;|&nbsp;<a href="#" target="_self">Nos liens </a>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    function verifNom(_nom) {
+      let nom = document.getElementById(_nom);
+      let regex = /^[a-zA-Z_'-]{2,}$/;
+      if (regex.test(nom.value)) {
+        return true;
+      } else {
+        return false;
+        alert("Nom incorect !");
+      }
+    }
+
+    function verifPhone(_phone) {
+      let phone = document.getElementById(_phone);
+      let regex = /^[0-9 -]{8,}$/;
+      if (regex.test(phone.value)) {
+        return true;
+      } else {
+        return false;
+        alert("Téléphone incorect !");
+      }
+    }
+
+    function verifMail(_email) {
+      let email = document.getElementById(_email);
+      let regex = /^\w{2,}[\.]?\w{1,}@{1}[a-zA-Z_-]{2,}\.[a-z]{2,4}$/;
+      if (regex.test(email.value)) {
+        return true;
+      } else {
+        return false;
+        alert("Mail incorect !");
+      }
+    }
+
+    function validationForm() {
+      let test1 = verifNom("nom");
+      let test2 = verifPhone("phone");
+      let test3 = verifMail("email");
+
+      if (test1 == true && test2 == true && test3 == true) {
+        alert("Formulaire bien remplie !");
+        document.querySelector("#validation").disabled = false;
+      } else {
+        document.querySelector("#validation").disabled = true;
+      }
+    }
+
+    document.querySelector("#nom").addEventListener('blur', validationForm, true);
+    document.querySelector("#phone").addEventListener('blur', validationForm, true);
+    document.querySelector("#email").addEventListener('blur', validationForm, true);
+    document.querySelector("#validation").addEventListener('click', validationForm, true);
+  </script>
+</body>
+
+</html>

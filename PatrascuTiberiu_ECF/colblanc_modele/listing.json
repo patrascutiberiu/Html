@@ -1,0 +1,51 @@
+[{
+        "id": 1,
+        "titre": "Un accompagnement dédié",
+        "accroche": "Entreprise ou Candidat, nous vous proposons une réponse adaptée à vos problématiques de recrutement."
+    },
+    {
+        "id": 2,
+        "titre": "Une Aventure Humaine",
+        "accroche": "Rejoignez l'Engagement Sociétal de nos Adhérents !"
+    },
+    {
+        "id": 3,
+        "titre": "Consultez nos Offres d'Emploi !",
+        "accroche": "De nombreuses offres à pourvoir dans les secteurs du Bâtiment, des Travaux Publics et de l'Industrie."
+    },
+    {
+        "id": 4,
+        "titre": "Construire son projet professionnel",
+        "accroche": "Vous n'avez pas d'idée sur votre orientation professionnelle ? Vous hésitez entre plusieurs possibilités ? Vous avez un projet, mais vous n'êtes pas sur qu'il soit réalisable ?"
+    },
+    {
+        "id": 5,
+        "titre": "Préparer sa formation ",
+        "accroche": "Un tremplin pour réussir son parcours et sa qualification"
+    },
+    {
+        "id": 6,
+        "titre": "Se former",
+        "accroche": "Se former à un nouveau métier pour accéder à l'emploi"
+    },
+    {
+        "id": 7,
+        "titre": "Découvrez votre futur job !",
+        "accroche": "Nos secteurs qui recrutent"
+    },
+    {
+        "id": 8,
+        "titre": "Notre Métier c'est l'emploi",
+        "accroche": "Nos solutions en intérim permettent déassurer la continuité de votre activité à court, moyen mais aussi désormais à long terme avec le CDI Intérimaire."
+    },
+    {
+        "id": 9,
+        "titre": "Colblanc et moi",
+        "accroche": "Pour accelerer votre recherche d'emploi, créer votre compte Colblanc"
+    },
+    {
+        "id": 10,
+        "titre": "Révéler vos talents",
+        "accroche": "L'Arbre qui cache la forêt"
+    }
+]

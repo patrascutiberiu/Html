@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="rss-atom.xsl" ?>
+<rss version="2.0">
+    <channel>
+   
+        <title>Site de formation</title>
+        <link>http://www.kidinet.com</link>
+        <description>Infonews Dernières formations de KIDINET</description>
+		<pubDate>Fri, 02 Jul 2012 19:30:00 GMT</pubDate>
+       
+        <item>
+            <title>Ecrire des requêtes de Transact SQL pour SQL Server 2008</title>
+            <link>http://www.kidinet.com/41-sgbd-et-decisionnel/389-ecrire-des-requetes-de-transact-sql-pour-sql-server-2008.html
+			</link>
+            <guid isPermaLink="true">http://www.kidinet.com</guid>
+            <description>Présentation du langage Transact-SQL.Langage de programmation Transact-SQL - Types d'instructions. Éléments de la syntaxe Transact-SQL - Utilisation de la documentation en ligne de SQL Server
+Utilisation des outils de requête Transact-SQL
+Analyseur de requêtes SQL Server - Utilisation de l'utilitaire sql - Exécution d instructions - Création et exécution de scripts
+Extractions de données
+Extraction de données à l'aide de l'instruction SELECT - Filtrage des données - Mise en forme des ensembles de résultats - Traitement des requêtes</description>
+		
+            <pubDate>Fri, 02 Jul 2012 19:30:00 GMT</pubDate>
+        </item>
+       
+        <item>
+            <title>Business Objects - Web Intelligence XI3 Niv 2</title>
+            <link>http://www.kidinet.com/41-sgbd-et-decisionnel/41-sgbd-et-decisionnel/429-business-objects-web-intelligence-xi3-niv-2.html</link>
+            <guid isPermaLink="true">http://monsiteweb.com/rss.html</guid>
+            <description>Création de formules de calculs basées sur des fonctions :
+De type chaîne de caractères. - De type booléen. - De type numérique. - De type date.
+Création de requêtes complexes :
+Combinaison de requêtes. - Sous-requêtes.
+Maîtrise des opérateurs et des contextes de calculs :
+Restriction conditionnelle sur les valeurs d'un objet. - Référence aux dimensions d'un contexte par des mots clefs spécifiques. - Annexe : cas particulier de synchronisation.</description>
+			
+            <pubDate>Fri, 02 Jul 2012 15:17:00 GMT</pubDate>
+        </item>
+		
+		<item>
+             <title>Business Objects - Crystal Report 2011 Niv 1 </title>
+            <link>http://www.kidinet.com/41-sgbd-et-decisionnel/431-business-objects-crystal-report-2011-niv-1-.html</link>
+            <guid isPermaLink="true">http://monsiteweb.com/rss1.html</guid>
+            <description>Définition d'un rapport
+Concepts de base de données - Élaboration d'un prototype Création d'un rapport
+Connexion à la source de données - Sélection des tables - Présentation de l'interface de développement - Insertion d'objets - Positionnement et dimensionnement des objets - Formatage des objets - Prévisualisation et sauvegarde
+Sélection d'enregistrements
+Utilisation de l'expert sélection - Ajout et modification de critères de sélection - Options de sauvegarde et de rafraîchissement des données</description>
+			
+            <pubDate>Fri, 02 Jul 2012 15:17:00 GMT</pubDate>
+        </item>
+       
+    </channel>
+</rss>
+
+
